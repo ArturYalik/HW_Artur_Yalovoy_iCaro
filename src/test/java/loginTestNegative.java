@@ -5,7 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestBase {
+public class loginTestNegative extends TestBase {
     @BeforeMethod
     public void preCondition() {
         if (app.getUser().isLogGet()) {
@@ -14,15 +14,15 @@ public class LoginTest extends TestBase {
     }
 
     @Test
-    public void loginTest() {
+    public void loginTestNegative() {
         User data = new User()
                 .withEmail("asd@gmail.com")
-                .withPassword("Qwerty1699!");
+                .withPassword("Qwert1699!");
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(data);
         app.getUser().submitLogin();
         app.getUser().pause(30);
-        Assert.assertTrue(app.getUser().isLoggedSuccess());
+        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//h1[.='Login failed']")));
     }
 
     @AfterMethod
@@ -30,5 +30,4 @@ public class LoginTest extends TestBase {
         app.getUser().pause(30);
         app.getUser().clickOkButton();
     }
-
 }
