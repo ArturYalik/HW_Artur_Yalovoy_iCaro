@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f329720a-3d87-4075-a7b5-15ec06c85b09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PositiveRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PositiveRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.AddNewCar.addNewCarPositive">
+  <component name="RunManager" selected="Gradle.PositiveRegistrationTest.regTest">
     <configuration name="AddNewCar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -145,7 +144,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="loginTestNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PositiveRegistrationTest.regTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;loginTestNegative&quot;" />
+            <option value="&quot;PositiveRegistrationTest.regTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewCar.addNewCarPositive" />
+        <item itemvalue="Gradle.PositiveRegistrationTest.regTest" />
         <item itemvalue="Gradle.PositiveRegistrationTest" />
+        <item itemvalue="Gradle.AddNewCar.addNewCarPositive" />
         <item itemvalue="Gradle.AddNewCar" />
         <item itemvalue="Gradle.LoginTest.loginTest" />
-        <item itemvalue="Gradle.loginTestNegative" />
       </list>
     </recent_temporary>
   </component>

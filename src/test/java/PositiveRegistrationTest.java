@@ -24,7 +24,7 @@ public class PositiveRegistrationTest extends TestBase {
         app.getUser().fillRegForm(data);
         app.getUser().pause(3);
         app.getUser().clickCheckboxButton();
-        app.getUser().pause(3);
+        app.getUser().pause(30);
         app.getUser().submitReg();
         app.getUser().pause(3);
         app.getUser().clickOkButton();

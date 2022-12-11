@@ -42,7 +42,9 @@ public class HelperUser extends HelperBase {
     }
 
     public void submitReg() {
-        click(By.xpath("//button[@type='submit']"));
+        WebDriverWait wait = new WebDriverWait(wd,15);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
+//        click(By.xpath("//button[@type='submit']"));
     }
 
     public boolean isLogGet() {
@@ -65,8 +67,7 @@ public class HelperUser extends HelperBase {
     }
 
     public void clickCheckboxButton() {
-       wd.findElements(By.xpath("//input[@id='terms-of-use']"));
-
+       
     }
 
     public void login(User data) {
