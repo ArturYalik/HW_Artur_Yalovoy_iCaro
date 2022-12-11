@@ -13,8 +13,8 @@ public class HelperCar extends HelperBase {
     }
 
     public boolean isCarFormPresent(){
-       return new WebDriverWait(wd,10).until(ExpectedConditions.textToBePresentInElement(
-                wd.findElement(By.xpath("//div[@class='car-card']//h1[.=' Let the car work ']")), " Let the car work "));
+       return new WebDriverWait(wd,100).until(ExpectedConditions.textToBePresentInElement(
+                wd.findElement(By.xpath("//h1[normalize-space()='Let the car work']")), " Let the car work "));
     }
 
 

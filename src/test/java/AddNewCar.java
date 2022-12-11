@@ -7,15 +7,15 @@ import org.testng.annotations.Test;
 
 public class AddNewCar extends TestBase {
 
-    @BeforeMethod
-    public void preCondition() {
-        if (app.getUser().isLogGet() == false) {
-            app.getUser().login(new User()
-                    .withEmail("asd@gmail.com")
-                    .withPassword("Qwerty1699!"));
-        }
-
-    }
+//    @BeforeMethod
+//    public void preCondition() {
+//        if (app.getUser().isLogGet() == false) {
+//            app.getUser().login(new User()
+//                    .withEmail("asd@gmail.com")
+//                    .withPassword("Qwerty1699!"));
+//        }
+//
+//    }
 
     @Test
     public void addNewCarPositive() {

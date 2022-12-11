@@ -65,7 +65,7 @@ public class HelperUser extends HelperBase {
     }
 
     public void clickCheckboxButton() {
-        click(By.xpath("//label[position()=5]"));
+       wd.findElements(By.xpath("//input[@id='terms-of-use']"));
 
     }
 
@@ -95,7 +95,6 @@ public class HelperUser extends HelperBase {
     public void openCarForm() {
         WebDriverWait wait = new WebDriverWait(wd,10);
         click(By.xpath("//a[@id='1']"));
-//        click(By.id("1"));
     }
 }
 
