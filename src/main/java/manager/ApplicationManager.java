@@ -27,6 +27,10 @@ public class ApplicationManager {
         car = new HelperCar(wd);
     }
 
+    public void refresh(){
+        wd.navigate().refresh();
+    }
+
     public void ternDown() {
         wd.quit();
     }

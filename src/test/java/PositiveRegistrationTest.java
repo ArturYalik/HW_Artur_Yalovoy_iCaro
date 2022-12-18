@@ -22,13 +22,15 @@ public class PositiveRegistrationTest extends TestBase {
 
         app.getUser().openRegForm();
         app.getUser().fillRegForm(data);
-        app.getUser().pause(3);
+        app.getUser().pause(3000);
         app.getUser().clickCheckboxButton();
-        app.getUser().pause(30);
+        app.getUser().pause(3000);
         app.getUser().submitReg();
-        app.getUser().pause(3);
+        app.getUser().pause(3000);
+        Assert.assertTrue(app.getUser().isRegSuccess());
+        app.getUser().pause(3000);
         app.getUser().clickOkButton();
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[contains(.,'Delete account')]")));
+
 
     }
 }

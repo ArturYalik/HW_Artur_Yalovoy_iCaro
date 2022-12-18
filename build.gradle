@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
     implementation 'org.testng:testng:7.4.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     compileOnly 'org.projectlombok:lombok:1.18.24'

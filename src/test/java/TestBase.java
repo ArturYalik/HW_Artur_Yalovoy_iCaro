@@ -13,7 +13,7 @@ public class TestBase {
 
     @AfterSuite
     public void stop() {
-        app.ternDown();
+//        app.ternDown();
     }
 
 }

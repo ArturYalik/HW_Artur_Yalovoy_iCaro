@@ -28,11 +28,21 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
+//    public void pause(int time) {
+//        wd.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+//    }
+
     public void pause(int time) {
-        wd.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public String getText(By locator){
+
+    public String getText(By locator) {
         return wd.findElement(locator).getText();
     }
+
 }
