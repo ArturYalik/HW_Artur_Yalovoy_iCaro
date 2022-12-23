@@ -21,7 +21,7 @@ public class AddNewCar extends TestBase {
     public void addNewCarPositive() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         Car car = Car.builder()
-                .location("Tel Aviv")
+                .location(null)
                 .make("KIA")
                 .model("Petrol")
                 .year("2020")
@@ -43,5 +43,6 @@ public class AddNewCar extends TestBase {
         app.getUser().submitAddCar();
         app.getUser().pause(1000);
         Assert.assertTrue(app.getCar().isCarFormPresent());
+        logger.info("Car added with: \n" + car.toString());
     }
 }

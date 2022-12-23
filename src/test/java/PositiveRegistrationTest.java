@@ -6,20 +6,22 @@ import org.testng.annotations.Test;
 
 public class PositiveRegistrationTest extends TestBase {
     @BeforeMethod
-    public void preCondition(){
-        if(app.getUser().isLogGet()){
+    public void preCondition() {
+        if (app.getUser().isLogGet()) {
             app.getUser().logout();
         }
     }
+
     @Test
-    public void regTest(){
+    public void regTest() {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
-        User data = new User().withName("Name"+i)
-                .withLastname("LastMane"+i)
+        User data = new User()
+                .withName("Name" + i)
+                .withLastname("LastMane" + i)
                 .withEmail("name" + i + "@gmail.com")
                 .withPassword("Qwert1699!");
 
-
+        logger.info("PositiveRegistrationTest with email: " + data.getEmail() +" password:"+data.getPassword());
         app.getUser().openRegForm();
         app.getUser().fillRegForm(data);
         app.getUser().pause(3000);
