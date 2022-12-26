@@ -21,7 +21,8 @@ public class PositiveRegistrationTest extends TestBase {
                 .withEmail("name" + i + "@gmail.com")
                 .withPassword("Qwert1699!");
 
-        logger.info("PositiveRegistrationTest with email: " + data.getEmail() +" password:"+data.getPassword());
+
+         logger.info("PositiveRegistrationTest with email: " + data.getEmail() +" password:"+data.getPassword());
         app.getUser().openRegForm();
         app.getUser().fillRegForm(data);
         app.getUser().pause(3000);
