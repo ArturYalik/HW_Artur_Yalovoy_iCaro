@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class AddNewCar extends TestBase {
+public class AddNewCarNegativeTest extends TestBase {
 
     @BeforeMethod
     public void preCondition() {
@@ -21,7 +21,7 @@ public class AddNewCar extends TestBase {
     public void addNewCarPositive() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         Car car = Car.builder()
-                .location("Tell Aviv")
+                .location(null)
                 .make("KIA")
                 .model("Petrol")
                 .year("2020")

@@ -2,6 +2,8 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +15,13 @@ public class ApplicationManager {
     EventFiringWebDriver wd;
     HelperUser user;
     HelperCar car;
+
+    String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
+
     public HelperUser getUser() {
         return user;
     }
@@ -22,8 +31,13 @@ public class ApplicationManager {
     }
 
     public void init() {
-//        wd = new ChromeDriver();
-        wd = new EventFiringWebDriver(new ChromeDriver());
+        if (browser.equals(BrowserType.FIREFOX)){
+            wd = new EventFiringWebDriver(new FirefoxDriver());
+            logger.info("Start for FireFox ");
+        }else {
+            wd = new EventFiringWebDriver(new ChromeDriver());
+            logger.info("Start for Chrome ");
+        }
         wd.register(new MyListener());
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/search");
