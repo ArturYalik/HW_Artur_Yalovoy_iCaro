@@ -1,4 +1,5 @@
 import manager.NGListener;
+import manager.ProviderData;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -16,10 +17,19 @@ public class LoginTest extends TestBase {
         }
     }
 
+    @Test(dataProvider = "loginModelDTO",dataProviderClass = ProviderData.class)
+    public void loginSuccessModel(User user){
+        logger.info("User: "+ user.toString());
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(user);
+        app.getUser().submitLogin();
+
+    }
+
     @Test
     public void loginTest() {
         User data = new User()
-                .withEmail("asdgmail.com")
+                .withEmail("asd@gmail.com")
                 .withPassword("Qwerty1699!");
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(data);

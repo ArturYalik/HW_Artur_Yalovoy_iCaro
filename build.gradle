@@ -25,9 +25,17 @@ test {
     useTestNG()
 }
 
-task testCar(type:Test){
+task tests(type:Test){
     useTestNG(){
-        suites 'src/test/resources/testng.xml'
+        def groups = System.getProperty('groups')
+        if(groups!=null){
+            includeGroups groups
+        }
+
+        def suite = System.getProperty('suite','')
+        if(suite.equals('findCar')){
+            suites 'src/test/resources/findCar.xml'
+        }
     }
     if (project.hasProperty('browser')){
         systemProperty'browser',"${browser}"

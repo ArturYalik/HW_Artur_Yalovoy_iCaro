@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
+import java.util.Iterator;
 import java.util.List;
 
 public class HelperUser extends HelperBase {
@@ -164,6 +165,43 @@ public class HelperUser extends HelperBase {
 
     public void openCarForm() {
         click(By.id("1"));
+    }
+
+    public void typeLocationFindCar(String address) {
+        type(By.id("city"), address);
+        pause(3000);
+        click(By.cssSelector("div.pac-item"));
+
+    }
+
+    public void typeDate(String date) {
+        type(By.id("dates"), date);
+        pause(3000);
+        click(By.xpath("//body"));
+    }
+
+    public void typeDateCalendar(String startDate, String finalDate) {
+        click(By.xpath("//input[@id='dates']"));
+        pause(3000);
+        for(WebElement i:wd.findElements(By.xpath("//div[contains(@class,'mat-calendar-body-cell-content')]"))){
+            if (i.getText().equals(startDate))
+                i.click();
+            if (i.getText().equals(finalDate))
+                i.click();
+        }
+        click(By.xpath("//body"));
+    }
+
+    public void typeDateAndMounth(String startDate, String finalDate, int numderClikToMounth) {
+        click(By.xpath("//input[@id='dates']"));
+        pause(3000);
+        for(int i = 0;i<numderClikToMounth;i++){
+            pause(3000);
+            click(By.xpath("//button[@aria-label='Next month']"));
+        }
+        pause(3000);
+        typeDateCalendar(startDate,finalDate);
+        click(By.xpath("//body"));
     }
 }
 

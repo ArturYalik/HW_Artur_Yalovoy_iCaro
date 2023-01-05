@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="findCar" verbose="1" >
+    <test name="find" >
+        <classes>
+            <class name="FindCarTest" />
+        </classes>
+    </test>
+</suite>

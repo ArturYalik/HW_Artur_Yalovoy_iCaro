@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f329720a-3d87-4075-a7b5-15ec06c85b09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewCarNegativeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/ProviderData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FindCarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/findCar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1214.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1215.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1301.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1302.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1431.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1996.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2287.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2291.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2450.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2813.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3376.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3475.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-352.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +80,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="manager" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Artur Yalovoy\Documents\GitHub\iCaro\src\test\resources" />
     </key>
@@ -67,8 +93,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewCar.addNewCarPositive">
-    <configuration name="AddNewCar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FindCarTest.findCarByEnteringTheDate">
+    <configuration name="FindCarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -81,7 +107,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddNewCar&quot;" />
+            <option value="&quot;FindCarTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -91,7 +117,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewCar.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FindCarTest.findCarByClick" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,7 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddNewCar.addNewCarPositive&quot;" />
+            <option value="&quot;FindCarTest.findCarByClick&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -114,7 +140,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FindCarTest.findCarByClickToMounth" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -127,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;LoginTest&quot;" />
+            <option value="&quot;FindCarTest.findCarByClickToMounth&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -137,7 +163,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NegativeRegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FindCarTest.findCarByEnteringTheDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +176,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NegativeRegistrationTest&quot;" />
+            <option value="&quot;FindCarTest.findCarByEnteringTheDate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PositiveRegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTest.loginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PositiveRegistrationTest&quot;" />
+            <option value="&quot;LoginTest.loginTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewCar.addNewCarPositive" />
-        <item itemvalue="Gradle.PositiveRegistrationTest" />
-        <item itemvalue="Gradle.LoginTest" />
-        <item itemvalue="Gradle.AddNewCar" />
-        <item itemvalue="Gradle.NegativeRegistrationTest" />
+        <item itemvalue="Gradle.FindCarTest.findCarByEnteringTheDate" />
+        <item itemvalue="Gradle.FindCarTest.findCarByClick" />
+        <item itemvalue="Gradle.FindCarTest.findCarByClickToMounth" />
+        <item itemvalue="Gradle.FindCarTest" />
+        <item itemvalue="Gradle.LoginTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
