@@ -5,8 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 @Listeners(NGListener.class)
-public class FindCarTest extends TestBase{
+public class FindCarTest extends TestBase {
     @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.getUser().isLogGet() == false) {
@@ -16,41 +17,43 @@ public class FindCarTest extends TestBase{
         }
 
     }
+
     @Test(groups = "findCar")
-    public void findCarByEnteringTheDate(){
-        String location = "Tell Aviv";
-        String date = "1/15/2023-1/25/2023";
+    public void findCarByEnteringTheDate() {
         app.getUser().pause(3000);
-        app.getUser().typeLocationFindCar(location);
-        app.getUser().typeDate(date);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().typeDate("1/15/2023-1/25/2023");
         app.getUser().submitCarForm();
-        app.getUser().pause(3000);
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[@class='search-results']")));
+        Assert.assertTrue(app.getSh().isListPresent());
     }
+
     @Test(groups = "findCar")
-    public void findCarByClick(){
-        String location = "Tell Aviv";
-        String startDate = "15";
-        String finalDate = "18";
+    public void findCarByClick() {
         app.getUser().pause(3000);
-        app.getUser().typeLocationFindCar(location);
-        app.getUser().typeDateCalendar(startDate,finalDate);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().fillSearchForm("1/15/2023","1/25/2023");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[@class='search-results']")));
+        Assert.assertTrue(app.getSh().isListPresent());
     }
+
     @Test(groups = "findCar")
-    public void findCarByClickToMounth(){
-        String location = "Tell Aviv";
-        String startDate = "15";
-        String finalDate = "18";
-        int numderClikToMounth = 2;
+    public void findCarByClickToMounth() {
         app.getUser().pause(3000);
-        app.getUser().typeLocationFindCar(location);
-        app.getUser().typeDateAndMounth(startDate,finalDate,numderClikToMounth);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().fillSearchFormMonuth("2/15/2023","4/25/2023");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[@class='search-results']")));
+        Assert.assertTrue(app.getSh().isListPresent());
+    }
+ @Test(groups = "findCar")
+    public void findCarByClickToYears() {
+        app.getUser().pause(3000);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().fillSearchFormYears("JAN/15/2023","JAN/2/2024");
+        app.getUser().submitCarForm();
+        app.getUser().pause(3000);
+        Assert.assertTrue(app.getSh().isListPresent());
     }
 
 }

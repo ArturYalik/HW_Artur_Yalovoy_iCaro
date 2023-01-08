@@ -56,4 +56,8 @@ public class HelperBase {
         }
     }
 
+    public void refresh(){
+        wd.navigate().refresh();
+    }
+
 }

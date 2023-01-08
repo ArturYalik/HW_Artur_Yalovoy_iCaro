@@ -8,13 +8,17 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class ApplicationManager {
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
-//    WebDriver wd;
+    //    WebDriver wd;
     EventFiringWebDriver wd;
     HelperUser user;
     HelperCar car;
+
+    HelperSearch sh;
 
     String browser;
 
@@ -30,22 +34,28 @@ public class ApplicationManager {
         return car;
     }
 
+    public HelperSearch getSh() {
+        return sh;
+    }
+
     public void init() {
-        if (browser.equals(BrowserType.FIREFOX)){
+        if (browser.equals(BrowserType.FIREFOX)) {
             wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Start for FireFox ");
-        }else {
+        } else {
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("Start for Chrome ");
         }
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.register(new MyListener());
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/search");
         user = new HelperUser(wd);
         car = new HelperCar(wd);
+        sh = new HelperSearch(wd);
     }
 
-    public void refresh(){
+    public void refresh() {
         wd.navigate().refresh();
     }
 

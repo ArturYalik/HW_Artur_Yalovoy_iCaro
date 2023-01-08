@@ -5,36 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f329720a-3d87-4075-a7b5-15ec06c85b09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/ProviderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FindCarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/findCar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/HelperSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1214.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1215.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1302.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1431.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1996.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2032.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2033.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2034.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2287.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2291.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2292.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2813.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3376.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3377.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3475.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-352.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindCarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindCarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1205.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1268.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1439.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1576.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1649.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1654.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1658.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-1772.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-214.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2222.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-248.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2616.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2683.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-2833.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-314.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3183.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-338.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3481.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3530.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-3566.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-386.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-444.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-454.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-594.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-643.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-766.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-781.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-830.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-915.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/screenshot/screenshot-916.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +106,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FindCarTest.findCarByEnteringTheDate">
+  <component name="RunManager" selected="Gradle.FindCarTest.findCarByClickToYears">
     <configuration name="FindCarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,6 +176,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FindCarTest.findCarByClickToYears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tests" />
+            <option value="--tests" />
+            <option value="&quot;FindCarTest.findCarByClickToYears&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="FindCarTest.findCarByEnteringTheDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,36 +222,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.loginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;LoginTest.loginTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FindCarTest.findCarByEnteringTheDate" />
-        <item itemvalue="Gradle.FindCarTest.findCarByClick" />
+        <item itemvalue="Gradle.FindCarTest.findCarByClickToYears" />
         <item itemvalue="Gradle.FindCarTest.findCarByClickToMounth" />
+        <item itemvalue="Gradle.FindCarTest.findCarByClick" />
+        <item itemvalue="Gradle.FindCarTest.findCarByEnteringTheDate" />
         <item itemvalue="Gradle.FindCarTest" />
-        <item itemvalue="Gradle.LoginTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
