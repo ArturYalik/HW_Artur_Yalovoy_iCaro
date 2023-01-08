@@ -1,7 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="findcar" verbose="1" >
+    <groups>
+        <run>
+            <include name="findCar" />
+        </run>
+    </groups>
 
-<suite name="findCar" verbose="1" >
-    <test name="find" >
+    <test name="smoke_test">
         <classes>
             <class name="FindCarTest" />
         </classes>
