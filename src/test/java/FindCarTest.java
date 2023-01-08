@@ -31,7 +31,7 @@ public class FindCarTest extends TestBase {
     public void findCarByClick() {
         app.getUser().pause(3000);
         app.getSh().typeLocationFindCar("Tel Aviv");
-        app.getSh().fillSearchForm("1/15/2023","1/25/2023");
+        app.getSh().fillSearchForm("1/15/2023", "1/25/2023");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
         Assert.assertTrue(app.getSh().isListPresent());
@@ -41,16 +41,27 @@ public class FindCarTest extends TestBase {
     public void findCarByClickToMounth() {
         app.getUser().pause(3000);
         app.getSh().typeLocationFindCar("Tel Aviv");
-        app.getSh().fillSearchFormMonuth("2/15/2023","4/25/2023");
+        app.getSh().fillSearchFormMonuth("2/15/2023", "4/25/2023");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
         Assert.assertTrue(app.getSh().isListPresent());
     }
- @Test(groups = "findCar")
+
+    @Test(groups = "findCar")
     public void findCarByClickToYears() {
         app.getUser().pause(3000);
         app.getSh().typeLocationFindCar("Tel Aviv");
-        app.getSh().fillSearchFormYears("1/15/2023","1/2/2024");
+        app.getSh().fillSearchFormYears("1/15/2023", "1/2/2024");
+        app.getUser().submitCarForm();
+        app.getUser().pause(3000);
+        Assert.assertTrue(app.getSh().isListPresent());
+    }
+
+    @Test(groups = "findCar")
+    public void findCarByAnyDate() {
+        app.getUser().pause(3000);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().fillSearchFormAny("1/15/2023", "1/20/2023");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
         Assert.assertTrue(app.getSh().isListPresent());

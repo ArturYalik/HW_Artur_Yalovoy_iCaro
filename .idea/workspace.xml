@@ -66,8 +66,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FindCarTest.findCarByClickToYears">
-    <configuration name="FindCarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FindCarTest.findCarByAnyDate">
+    <configuration name="FindCarTest.findCarByAnyDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -78,9 +78,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":tests" />
             <option value="--tests" />
-            <option value="&quot;FindCarTest&quot;" />
+            <option value="&quot;FindCarTest.findCarByAnyDate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FindCarTest.findCarByClickToYears" />
+        <item itemvalue="Gradle.FindCarTest.findCarByAnyDate" />
         <item itemvalue="Gradle.FindCarTest.findCarByClickToMounth" />
+        <item itemvalue="Gradle.FindCarTest.findCarByClickToYears" />
         <item itemvalue="Gradle.FindCarTest.findCarByClick" />
         <item itemvalue="Gradle.FindCarTest.findCarByEnteringTheDate" />
-        <item itemvalue="Gradle.FindCarTest" />
       </list>
     </recent_temporary>
   </component>

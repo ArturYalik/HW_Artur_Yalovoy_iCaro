@@ -12,6 +12,37 @@ public class HelperSearch extends HelperBase {
         super(wd);
     }
 
+
+    private void selectFormAny(String startDate, String finalDate) {
+        String[] startD = startDate.split("/");
+        String[] finalD = finalDate.split("/");
+
+        String yearStart = String.format("//div[.=' %s ']", startD[2]);
+        String yearEnd = String.format("//div[.=' %s ']", finalD[2]);
+
+        String monuthStart = String.format("//div[.=' %s ']", sendMount(startD[0]));
+        String monuthEnd = String.format("//div[.=' %s ']", sendMount(finalD[0]));
+
+        String dayStart = String.format("//div[.=' %s ']", startD[1]);
+        String dayEnd = String.format("//div[.=' %s ']", finalD[1]);
+
+        if(startD[2]==finalD[2]&&startD[0]==finalD[0]){
+            selectPeriod(startDate,finalDate);
+        }else if (startD[2] == finalD[2]) {
+            selectPeriodMonuth(startDate, finalDate);
+        }else {
+            click(By.xpath("//button[@aria-label='Choose month and year']"));
+            click(By.xpath(yearStart));
+            click(By.xpath(monuthStart));
+            click(By.xpath(dayStart));
+
+            click(By.xpath("//button[@aria-label='Choose month and year']"));
+            click(By.xpath(yearEnd));
+            click(By.xpath(monuthEnd));
+            click(By.xpath(dayEnd));
+        }
+    }
+
     private void selectPeriod(String startDate, String finalDate) {
         String[] startD = startDate.split("/");
         String[] finalD = finalDate.split("/");
@@ -44,39 +75,8 @@ public class HelperSearch extends HelperBase {
         click(By.xpath(monuthEnd));
         click(By.xpath(dayEnd));
 
-    }
 
-    private Object sendMount(String n) {
-        String dateOutput="";
-        switch (n){
-            case "1": dateOutput="JAN";
-                break;
-            case "2": dateOutput="FEB";
-                break;
-            case "3": dateOutput="MAR";
-                break;
-            case "4": dateOutput="APR";
-                break;
-            case "5": dateOutput="MAY";
-                break;
-            case "6": dateOutput="JUN";
-                break;
-            case "7": dateOutput="JUL";
-                break;
-            case "8": dateOutput="AUG";
-                break;
-            case "9": dateOutput="SEP";
-                break;
-            case "10": dateOutput="OCT";
-                break;
-            case "11": dateOutput="NOV";
-                break;
-            case "12": dateOutput="DEC";
-                break;
-        }
-        return dateOutput;
     }
-
     private void selectPeriodMonuth(String startDate, String finalDate) {
         int nowToStartMounth = 0, nowToEndMounth = 0;
         String[] startD = startDate.split("/");
@@ -100,6 +100,49 @@ public class HelperSearch extends HelperBase {
 
 
     }
+    private Object sendMount(String n) {
+        String dateOutput = "";
+        switch (n) {
+            case "1":
+                dateOutput = "JAN";
+                break;
+            case "2":
+                dateOutput = "FEB";
+                break;
+            case "3":
+                dateOutput = "MAR";
+                break;
+            case "4":
+                dateOutput = "APR";
+                break;
+            case "5":
+                dateOutput = "MAY";
+                break;
+            case "6":
+                dateOutput = "JUN";
+                break;
+            case "7":
+                dateOutput = "JUL";
+                break;
+            case "8":
+                dateOutput = "AUG";
+                break;
+            case "9":
+                dateOutput = "SEP";
+                break;
+            case "10":
+                dateOutput = "OCT";
+                break;
+            case "11":
+                dateOutput = "NOV";
+                break;
+            case "12":
+                dateOutput = "DEC";
+                break;
+        }
+        return dateOutput;
+    }
+
 
     public boolean isListPresent() {
         pause(2000);
@@ -138,8 +181,10 @@ public class HelperSearch extends HelperBase {
         click(By.xpath("//body"));
     }
 
-//    public void openFindCarForm() {
-//        click(By.id("0"));
-//    }
+   public void fillSearchFormAny(String startDate, String finalDate) {
+       click(By.id("dates"));
+       selectFormAny(startDate, finalDate);
+       pause(3000);
+    }
 
 }
