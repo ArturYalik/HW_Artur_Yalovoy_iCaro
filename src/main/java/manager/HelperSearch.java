@@ -17,29 +17,12 @@ public class HelperSearch extends HelperBase {
         String[] startD = startDate.split("/");
         String[] finalD = finalDate.split("/");
 
-        String yearStart = String.format("//div[.=' %s ']", startD[2]);
-        String yearEnd = String.format("//div[.=' %s ']", finalD[2]);
-
-        String monuthStart = String.format("//div[.=' %s ']", sendMount(startD[0]));
-        String monuthEnd = String.format("//div[.=' %s ']", sendMount(finalD[0]));
-
-        String dayStart = String.format("//div[.=' %s ']", startD[1]);
-        String dayEnd = String.format("//div[.=' %s ']", finalD[1]);
-
         if(startD[2]==finalD[2]&&startD[0]==finalD[0]){
             selectPeriod(startDate,finalDate);
         }else if (startD[2] == finalD[2]) {
             selectPeriodMonuth(startDate, finalDate);
         }else {
-            click(By.xpath("//button[@aria-label='Choose month and year']"));
-            click(By.xpath(yearStart));
-            click(By.xpath(monuthStart));
-            click(By.xpath(dayStart));
-
-            click(By.xpath("//button[@aria-label='Choose month and year']"));
-            click(By.xpath(yearEnd));
-            click(By.xpath(monuthEnd));
-            click(By.xpath(dayEnd));
+            selectPeriodYears(startDate,finalDate);
         }
     }
 
