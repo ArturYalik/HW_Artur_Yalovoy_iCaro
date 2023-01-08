@@ -170,4 +170,8 @@ public class HelperSearch extends HelperBase {
        pause(3000);
     }
 
+    public void openSearchForm(){
+        click(By.id("0"));
+    }
+
 }

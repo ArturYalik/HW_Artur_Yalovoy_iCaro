@@ -7,6 +7,7 @@
     <list default="true" id="f329720a-3d87-4075-a7b5-15ec06c85b09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindCarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindCarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FindCarTest.findCarByAnyDate">
+  <component name="RunManager" selected="Gradle.FindCarTest">
+    <configuration name="FindCarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tests" />
+            <option value="--tests" />
+            <option value="&quot;FindCarTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="FindCarTest.findCarByAnyDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,36 +182,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FindCarTest.findCarByEnteringTheDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;FindCarTest.findCarByEnteringTheDate&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FindCarTest" />
         <item itemvalue="Gradle.FindCarTest.findCarByAnyDate" />
         <item itemvalue="Gradle.FindCarTest.findCarByClickToMounth" />
         <item itemvalue="Gradle.FindCarTest.findCarByClickToYears" />
         <item itemvalue="Gradle.FindCarTest.findCarByClick" />
-        <item itemvalue="Gradle.FindCarTest.findCarByEnteringTheDate" />
       </list>
     </recent_temporary>
   </component>
