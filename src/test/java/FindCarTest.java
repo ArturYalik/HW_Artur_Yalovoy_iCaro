@@ -50,7 +50,7 @@ public class FindCarTest extends TestBase {
     public void findCarByClickToYears() {
         app.getUser().pause(3000);
         app.getSh().typeLocationFindCar("Tel Aviv");
-        app.getSh().fillSearchFormYears("JAN/15/2023","JAN/2/2024");
+        app.getSh().fillSearchFormYears("1/15/2023","1/2/2024");
         app.getUser().submitCarForm();
         app.getUser().pause(3000);
         Assert.assertTrue(app.getSh().isListPresent());

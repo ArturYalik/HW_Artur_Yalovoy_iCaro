@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import java.time.LocalDate;
 
 public class HelperSearch extends HelperBase {
+
+
     public HelperSearch(WebDriver wd) {
         super(wd);
     }
@@ -26,8 +28,8 @@ public class HelperSearch extends HelperBase {
         String yearStart = String.format("//div[.=' %s ']", startD[2]);
         String yearEnd = String.format("//div[.=' %s ']", finalD[2]);
 
-        String monuthStart = String.format("//div[.=' %s ']", startD[0]);
-        String monuthEnd = String.format("//div[.=' %s ']", finalD[0]);
+        String monuthStart = String.format("//div[.=' %s ']", sendMount(startD[0]));
+        String monuthEnd = String.format("//div[.=' %s ']", sendMount(finalD[0]));
 
         String dayStart = String.format("//div[.=' %s ']", startD[1]);
         String dayEnd = String.format("//div[.=' %s ']", finalD[1]);
@@ -42,6 +44,37 @@ public class HelperSearch extends HelperBase {
         click(By.xpath(monuthEnd));
         click(By.xpath(dayEnd));
 
+    }
+
+    private Object sendMount(String n) {
+        String dateOutput="";
+        switch (n){
+            case "1": dateOutput="JAN";
+                break;
+            case "2": dateOutput="FEB";
+                break;
+            case "3": dateOutput="MAR";
+                break;
+            case "4": dateOutput="APR";
+                break;
+            case "5": dateOutput="MAY";
+                break;
+            case "6": dateOutput="JUN";
+                break;
+            case "7": dateOutput="JUL";
+                break;
+            case "8": dateOutput="AUG";
+                break;
+            case "9": dateOutput="SEP";
+                break;
+            case "10": dateOutput="OCT";
+                break;
+            case "11": dateOutput="NOV";
+                break;
+            case "12": dateOutput="DEC";
+                break;
+        }
+        return dateOutput;
     }
 
     private void selectPeriodMonuth(String startDate, String finalDate) {
