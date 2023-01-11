@@ -68,6 +68,15 @@ public class FindCarTest extends TestBase {
         app.getUser().pause(3000);
         Assert.assertTrue(app.getSh().isListPresent());
     }
+  @Test(groups = "findCar")
+    public void findCarByDateYears() {
+        app.getUser().pause(3000);
+        app.getSh().typeLocationFindCar("Tel Aviv");
+        app.getSh().fillSearchFormAny("1/1/2024", "1/10/2024");
+        app.getUser().submitCarForm();
+        app.getUser().pause(3000);
+        Assert.assertTrue(app.getSh().isListPresent());
+    }
 
    @AfterMethod
    public void openSearch(){

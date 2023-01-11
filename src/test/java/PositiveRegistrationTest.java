@@ -1,5 +1,5 @@
+import manager.ProviderData;
 import models.User;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,9 +20,24 @@ public class PositiveRegistrationTest extends TestBase {
                 .withLastname("LastMane" + i)
                 .withEmail("name" + i + "@gmail.com")
                 .withPassword("Qwert1699!");
+        logger.info("PositiveRegistrationTest with email: " + data.getEmail() + " password:" + data.getPassword());
+        app.getUser().openRegForm();
+        app.getUser().fillRegForm(data);
+        app.getUser().pause(3000);
+        app.getUser().clickCheckboxButton();
+        app.getUser().pause(3000);
+        app.getUser().submitReg();
+        app.getUser().pause(3000);
+        Assert.assertTrue(app.getUser().isRegSuccess());
+        app.getUser().pause(3000);
+        app.getUser().clickOkButton();
 
 
-         logger.info("PositiveRegistrationTest with email: " + data.getEmail() +" password:"+data.getPassword());
+    }
+
+    @Test(dataProvider = "registrationModelCSV", dataProviderClass = ProviderData.class)
+    public void regTestDTO(User data) {
+        logger.info("PositiveRegistrationTest with email: " + data.getEmail() + " password:" + data.getPassword());
         app.getUser().openRegForm();
         app.getUser().fillRegForm(data);
         app.getUser().pause(3000);

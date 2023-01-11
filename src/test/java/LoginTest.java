@@ -1,8 +1,6 @@
 import manager.NGListener;
 import manager.ProviderData;
 import models.User;
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -36,10 +34,7 @@ public class LoginTest extends TestBase {
         app.getUser().submitLogin();
 //        Assert.assertTrue(app.getUser().isLoggedSuccess());
 
-
-
     }
-
     @AfterMethod
     public void postCondition() {
         app.getUser().pause(2000);
